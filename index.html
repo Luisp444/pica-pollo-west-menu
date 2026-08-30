@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pica Pollo West — Digital Menu</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f4ef;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 15px;
+      opacity: 0.85;
+    }
+
+    .categories {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: white;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 14px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .categories a {
+      text-decoration: none;
+      color: #222;
+      background: #f1f1f1;
+      padding: 10px 16px;
+      border-radius: 30px;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .categories a:hover {
+      background: #222;
+      color: white;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 25px 16px 50px;
+    }
+
+    section {
+      margin-bottom: 45px;
+    }
+
+    section h2 {
+      font-size: 26px;
+      margin-bottom: 18px;
+      border-bottom: 3px solid #222;
+      padding-bottom: 8px;
+    }
+
+    .item {
+      background: white;
+      border-radius: 15px;
+      padding: 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .item h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-weight: 800;
+      font-size: 18px;
+      white-space: nowrap;
+    }
+
+    .description {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer h2 {
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      margin: 7px 0;
+      color: #ddd;
+    }
+
+    .order-button {
+      display: inline-block;
+      margin-top: 15px;
+      background: #fff;
+      color: #111;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 27px;
+      }
+
+      section h2 {
+        font-size: 23px;
+      }
+
+      .item {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>PICA POLLO WEST</h1>
+    <p>Caribbean Fried Chicken · Comida rápida dominicana</p>
+  </header>
+
+  <nav class="categories">
+    <a href="#starters">🔥 Starters</a>
+    <a href="#chicken">🍗 Fried Chicken</a>
+    <a href="#burgers">🍔 Burgers</a>
+    <a href="#sides">🍟 Sides</a>
+    <a href="#salads">🥗 Salad</a>
+    <a href="#drinks">🥤 Drinks</a>
+  </nav>
+
+  <main>
+
+    <section id="starters">
+      <h2>🔥 Starters</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <div>
+            <h3>Starter Item</h3>
+            <p class="description">
+              Delicious Dominican-style appetizer.
+            </p>
+          </div>
+          <div class="price">$0.00</div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="chicken">
+      <h2>🍗 Fried Chicken</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <div>
+            <h3>Fried Chicken</h3>
+            <p class="description">
+              Crispy Caribbean-style fried chicken.
+            </p>
+          </div>
+          <div class="price">$0.00</div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="burgers">
+      <h2>🍔 Burgers</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <div>
+            <h3>Burger</h3>
+            <p class="description">
+              Freshly prepared and served with your favorite sides.
+            </p>
+          </div>
+          <div class="price">$0.00</div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="sides">
+      <h2>🍟 Sides</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <div>
+            <h3>French Fries</h3>
+            <p class="description">
+              Crispy golden French fries.
+            </p>
+          </div>
+          <div class="price">$0.00</div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="salads">
+      <h2>🥗 Salad</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <div>
+            <h3>Fresh Salad</h3>
+            <p class="description">
+              Fresh vegetables prepared daily.
+            </p>
+          </div>
+          <div class="price">$0.00</div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="drinks">
+      <h2>🥤 Drinks</h2>
+
+      <div class="item">
+        <div class="item-top">
+          <div>
+            <h3>Cold Drinks</h3>
+            <p class="description">
+              Ask about our selection of refreshing drinks.
+            </p>
+          </div>
+          <div class="price">$0.00</div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <h2>PICA POLLO WEST</h2>
+
+    <p>📍 3784 W 117th St</p>
+    <p>📞 216-727-0070</p>
+    <p>📱 @picapollowest_117</p>
+    <p>Open Daily · 11:00 AM – 11:00 PM</p>
+
+    <a class="order-button" href="#">
+      Order Now
+    </a>
+  </footer>
+
+</body>
+</html>
