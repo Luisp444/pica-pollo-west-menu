@@ -2,155 +2,648 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Pica Pollo West | Digital Menu</title>
 
 <style>
-*{box-sizing:border-box}
 
-body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#f6efe5;
-color:#222;
+* {
+  box-sizing: border-box;
 }
 
-.logo-banner{
-width:100%;
-text-align:center;
-background:#111;
-overflow:hidden;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6efe5;
+  color: #222;
 }
 
-.logo-banner img{
-width:100%;
-height:auto;
-display:block;
+/* LOGO */
+
+.logo-banner {
+  width: 100%;
+  background: #111;
+  overflow: hidden;
 }
 
-nav{
-position:sticky;
-top:0;
-background:white;
-padding:12px;
-display:flex;
-gap:8px;
-overflow-x:auto;
-z-index:5;
-box-shadow:0 2px 8px #bbb;
+.logo-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-nav a{
-background:#111;
-color:white;
-text-decoration:none;
-padding:10px 15px;
-border-radius:20px;
-white-space:nowrap;
-font-weight:bold;
+/* CATEGORY MENU */
+
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  z-index: 10;
+  box-shadow: 0 2px 8px #bbb;
 }
 
-main{
-max-width:850px;
-margin:auto;
-padding:20px 14px;
+nav a {
+  background: #111;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-weight: bold;
 }
 
-section{
-margin-bottom:35px;
+/* MAIN */
+
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px 14px 40px;
 }
 
-h2{
-background:#111;
-color:white;
-display:inline-block;
-padding:8px 20px;
-border-radius:8px;
-margin:0 0 15px;
-font-size:24px;
+section {
+  margin-bottom: 35px;
 }
 
-.item{
-background:white;
-margin:9px 0;
-padding:14px;
-border-radius:12px;
-box-shadow:0 2px 8px #ddd;
+h2 {
+  background: #111;
+  color: white;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin: 0 0 15px;
+  font-size: 24px;
 }
 
-.item-top{
-display:flex;
-justify-content:space-between;
-gap:15px;
-align-items:flex-start;
+/* MENU ITEMS */
+
+.item {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #ddd;
 }
 
-.item h3{
-margin:0 0 5px;
-font-size:17px;
+.item-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: flex-start;
 }
 
-.item p{
-margin:0;
-color:#666;
-font-size:14px;
-line-height:1.4;
+.item h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
 }
 
-.price{
-color:#d71920;
-font-weight:900;
-white-space:nowrap;
-font-size:17px;
+.item p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-.note{
-text-align:center;
-background:#111;
-color:white;
-padding:15px;
-border-radius:12px;
-margin:20px 0;
-font-weight:bold;
+.price {
+  color: #d71920;
+  font-weight: 900;
+  white-space: nowrap;
+  font-size: 17px;
 }
 
-footer{
-background:#050505;
-color:white;
-text-align:center;
-padding:25px;
+/* NOTES */
+
+.note {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 25px 0;
+  font-weight: bold;
 }
 
-footer h2{
-background:none;
-margin:0;
-color:white;
+/* FOOTER */
+
+footer {
+  background: #050505;
+  color: white;
+  text-align: center;
+  padding: 25px;
 }
 
-footer p{
-margin:7px;
+footer p {
+  margin: 7px;
 }
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .logo-banner img {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  .item {
+    padding: 14px;
+  }
+
+}
+
 </style>
 </head>
 
+
 <body>
 
+
+<!-- LOGO -->
+
 <div class="logo-banner">
-<img src="582646D8-D62A-4BE4-A929-F0DA4592F465.png" alt="Pica Pollo West">
+
+  <img
+    src="582646D8-D62A-4BE4-A929-F0DA4592F465.png"
+    alt="Pica Pollo West">
+
 </div>
 
+
+<!-- CATEGORY MENU -->
+
 <nav class="categories">
-<a href="#starters">🔥 Starters</a>
-<a href="#chicken">🍗 Caribbean Fried Chicken</a>
-<a href="#wings">🍗 Wings</a>
-<a href="#salads">🥗 Salads</a>
-<a href="#specials">⭐ Specials</a>
-<a href="#kids">👧 Kids Meals</a>
-<a href="#juices">🧃 Natural Juices</a>
-<a href="#desserts">🍰 Desserts – Grey's Cake</a>
-<a href="#drinks">🥤 Drinks</a>
-<a href="#sides">🍟 Sides</a>
-<a href="#party">🎉 Party Packages</a>
+
+  <a href="#starters">🔥 Starters</a>
+
+  <a href="#chicken">🍗 Caribbean Fried Chicken</a>
+
+  <a href="#wings">🍗 Wings</a>
+
+  <a href="#salads">🥗 Salads</a>
+
+  <a href="#specials">⭐ Specials</a>
+
+  <a href="#kids">👧 Kids Meals</a>
+
+  <a href="#juices">🧃 Natural Juices</a>
+
+  <a href="#desserts">🍰 Desserts – Grey's Cake</a>
+
+  <a href="#drinks">🥤 Drinks</a>
+
+  <a href="#sides">🍟 Sides</a>
+
+  <a href="#party">🎉 Party Packages</a>
+
 </nav>
 
+
 <main>
+
+
+<!-- STARTERS -->
+
+<section id="starters">
+
+  <h2>🔥 Starters</h2>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Quipes</h3>
+      </div>
+      <div class="price">$4.00</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Bolitas de Yuca con Queso</h3>
+      </div>
+      <div class="price">$4.00</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Empanada de Queso</h3>
+      </div>
+      <div class="price">$4.00</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Empanada de Pollo</h3>
+      </div>
+      <div class="price">$4.00</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Empanada de Carne</h3>
+      </div>
+      <div class="price">$4.50</div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- CARIBBEAN FRIED CHICKEN -->
+
+<section id="chicken">
+
+  <h2>🍗 Caribbean Fried Chicken</h2>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>2 Pieces</h3>
+        <p>Served with cornbread and choice of side.</p>
+      </div>
+      <div class="price">$10.95</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>3 Pieces</h3>
+        <p>Served with cornbread and choice of side.</p>
+      </div>
+      <div class="price">$12.95</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>4 Pieces</h3>
+        <p>Served with cornbread and choice of side.</p>
+      </div>
+      <div class="price">$15.50</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>3 Pieces White Meat</h3>
+        <p>Two bone-in chicken breasts and one jumbo chicken, served with cornbread and choice of side.</p>
+      </div>
+      <div class="price">$16.50</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>4 Pieces Mixed Dark & White Meat</h3>
+        <p>Served with cornbread and choice of side.</p>
+      </div>
+      <div class="price">$15.50</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>8 Pieces</h3>
+        <p>Includes 2 coleslaws and 2 cornbreads.</p>
+      </div>
+      <div class="price">$26.95</div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- WINGS -->
+
+<section id="wings">
+
+  <h2>🍗 Wings</h2>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>3 Whole Wings</h3>
+        <p>Served with cornbread and choice of side.</p>
+      </div>
+      <div class="price">$12.95</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>5 Whole Wings</h3>
+        <p>Served with cornbread and choice of side.</p>
+      </div>
+      <div class="price">$15.95</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>10 Whole Wings</h3>
+        <p>Choice of side.</p>
+      </div>
+      <div class="price">$26.95</div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- SALADS -->
+
+<section id="salads">
+
+  <h2>🥗 Salads</h2>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>House Salad</h3>
+        <p>Fresh house salad. Add Chicken $3.50 or Shrimp $7.50.</p>
+      </div>
+      <div class="price">$5.50</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Octopus Salad</h3>
+        <p>Fresh octopus salad prepared with vegetables and Caribbean flavors. Served with your choice of side.</p>
+      </div>
+      <div class="price">$18.95</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Shrimp Ceviche</h3>
+        <p>Fresh shrimp marinated in citrus with onions, peppers and herbs. Served with your choice of side.</p>
+      </div>
+      <div class="price">$14.50</div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- SPECIALS -->
+
+<section id="specials">
+
+  <h2>⭐ Specials</h2>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Caribbean Red Snapper</h3>
+        <p>Fried Caribbean-style red snapper served with a house salad and your choice of side.</p>
+      </div>
+      <div class="price">$26.95</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Yaroa de Papas</h3>
+        <p>French fries with chicken in red sauce, cheese, ketchup and mayonnaise.</p>
+      </div>
+      <div class="price">$15.95</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Yaroa de Plátanos Maduros</h3>
+        <p>Mashed sweet plantains with chicken in red sauce, cheese, ketchup and mayonnaise.</p>
+      </div>
+      <div class="price">$15.95</div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- KIDS MEALS -->
+
+<section id="kids">
+
+  <h2>👧 Kids Meals</h2>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>2 Jumbo Fried Shrimp + Fries</h3>
+        <p>Two crispy jumbo fried shrimp served with French fries.</p>
+      </div>
+      <div class="price">$6.95</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>2 Chicken Tenders + Fries</h3>
+        <p>Two crispy chicken tenders served with French fries.</p>
+      </div>
+      <div class="price">$6.95</div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- NATURAL JUICES -->
+
+<section id="juices">
+
+  <h2>🧃 Natural Juices</h2>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Passion Fruit</h3>
+      </div>
+      <div class="price">$3.75</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Soursop (Guanábana)</h3>
+      </div>
+      <div class="price">$3.75</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Tamarindo</h3>
+      </div>
+      <div class="price">$3.75</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Lemon</h3>
+      </div>
+      <div class="price">$3.75</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-top">
+      <div>
+        <h3>Agua de Jamaica</h3>
+      </div>
+      <div class="price">$3.75</div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- DESSERTS -->
+
+<section id="desserts">
+
+  <h2>🍰 Desserts – Grey's Cake</h2>
+
+  <div class="item">
+    <h3>Coming Soon</h3>
+    <p class="description">
+      Our desserts and Grey's Cake selection.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- DRINKS -->
+
+<section id="drinks">
+
+  <h2>🥤 Drinks</h2>
+
+  <div class="item">
+    <h3>Coming Soon</h3>
+    <p class="description">
+      Refreshing drinks coming soon.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- SIDES -->
+
+<section id="sides">
+
+  <h2>🍟 Sides</h2>
+
+  <div class="item">
+    <h3>Rice & Beans</h3>
+    <p class="description">
+      Seasoned Dominican-style rice and beans.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>French Fries</h3>
+    <p class="description">
+      Crispy golden French fries.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>Tostones</h3>
+    <p class="description">
+      Crispy fried green plantains.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>Maduros</h3>
+    <p class="description">
+      Sweet fried ripe plantains.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>Coleslaw</h3>
+    <p class="description">
+      Fresh and creamy homemade coleslaw.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>Cornbread</h3>
+    <p class="description">
+      Freshly baked cornbread.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- PARTY PACKAGES -->
+
+<section id="party">
+
+  <h2>🎉 Party Packages</h2>
+
+  <div class="item">
+    <h3>Coming Soon</h3>
+    <p class="description">
+      Ask us about our party packages.
+    </p>
+  </div>
+
+</section>
+
+
+<div class="note">
+  Pernil available upon request.
+</div>
+
+</main>
+
+
+<footer>
+
+  <p>Pica Pollo West</p>
+  <p>Caribbean Fried Chicken</p>
+
+</footer>
+
+
+</body>
+</html>
