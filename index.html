@@ -10,10 +10,6 @@
 
 <style>
 
-/* ========================= */
-/* GENERAL */
-/* ========================= */
-
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -204,17 +200,31 @@ section h2 {
   border-radius: 14px;
 }
 
+
+/* BLACK GREY'S CAKE BUTTON */
+
 .greys-button {
   display: block;
   width: fit-content;
-  margin: 15px auto 0;
+
+  /* More space before the Grey's Cake / Ask us card */
+  margin: 15px auto 30px;
+
   padding: 14px 22px;
-  background: white;
-  color: #222;
+
+  background: #111;
+  color: white;
+
   text-decoration: none;
   border-radius: 25px;
+
   font-weight: bold;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+.greys-button:hover {
+  background: #222;
 }
 
 
@@ -255,14 +265,20 @@ section h2 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+
   padding: 13px 22px;
+
   background: white;
   color: #222;
+
   text-decoration: none;
   border-radius: 25px;
+
   font-weight: bold;
   font-size: 16px;
+
   box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+
   transition: transform 0.2s ease;
 }
 
@@ -271,6 +287,28 @@ section h2 {
 }
 
 .social-svg {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+
+/* ========================= */
+/* INSTAGRAM ORIGINAL STYLE */
+/* ========================= */
+
+.instagram-logo {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+
+/* ========================= */
+/* GOOGLE REVIEWS */
+/* ========================= */
+
+.google-review-icon {
   width: 25px;
   height: 25px;
   display: block;
@@ -313,14 +351,20 @@ section h2 {
   align-items: center;
   justify-content: center;
   gap: 12px;
+
   min-width: 220px;
   padding: 15px 20px;
+
   background: white;
   color: #222;
+
   text-decoration: none;
   border-radius: 16px;
+
   font-size: 16px;
+
   box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+
   transition: transform 0.2s ease;
 }
 
@@ -332,8 +376,10 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 42px;
   height: 42px;
+
   flex-shrink: 0;
 }
 
@@ -422,6 +468,11 @@ footer p {
     width: 100%;
   }
 
+  .greys-button {
+    width: 90%;
+    text-align: center;
+  }
+
 }
 
 </style>
@@ -508,115 +559,115 @@ footer p {
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Quipes</h3>
+<h3>Quipes</h3>
 
-      <p class="description">
-        Traditional Dominican-style crispy quipes.
-      </p>
+<p class="description">
+Traditional Dominican-style crispy quipes.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$4.00</div>
+<div class="price">$4.00</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Bolita de Yuca con Queso</h3>
+<h3>Bolita de Yuca con Queso</h3>
 
-      <p class="description">
-        Crispy cassava bites filled with cheese.
-      </p>
+<p class="description">
+Crispy cassava bites filled with cheese.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$4.00</div>
+<div class="price">$4.00</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Empanada de Queso</h3>
+<h3>Empanada de Queso</h3>
 
-      <p class="description">
-        Crispy golden empanada filled with cheese.
-      </p>
+<p class="description">
+Crispy golden empanada filled with cheese.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$4.00</div>
+<div class="price">$4.00</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Empanada de Pollo</h3>
+<h3>Empanada de Pollo</h3>
 
-      <p class="description">
-        Crispy empanada filled with seasoned chicken.
-      </p>
+<p class="description">
+Crispy empanada filled with seasoned chicken.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$4.00</div>
+<div class="price">$4.00</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Empanada de Carne</h3>
+<h3>Empanada de Carne</h3>
 
-      <p class="description">
-        Crispy empanada filled with seasoned beef.
-      </p>
+<p class="description">
+Crispy empanada filled with seasoned beef.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$4.50</div>
+<div class="price">$4.50</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="note">
 
-  <strong>Side Choices:</strong>
+<strong>Side Choices:</strong>
 
-  Rice &amp; Beans · French Fries · Tostones ·
-  Maduros · Coleslaw · Cornbread
+Rice &amp; Beans · French Fries · Tostones ·
+Maduros · Coleslaw · Cornbread
 
 </div>
 
@@ -634,224 +685,223 @@ footer p {
 
 <div class="item">
 
-  <img
-    src="417393B7-266D-4C4A-851C-331E889AD483.png"
-    alt="2 pcs Fried Chicken"
-  >
+<img
+src="417393B7-266D-4C4A-851C-331E889AD483.png"
+alt="2 pcs Fried Chicken"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>2 pcs Fried Chicken</h3>
+<h3>2 pcs Fried Chicken</h3>
 
-      <p class="description">
-        Two pieces of crispy Caribbean-style fried chicken,
-        served with your choice of side and cornbread.
-      </p>
+<p class="description">
+Two pieces of crispy Caribbean-style fried chicken,
+served with your choice of side and cornbread.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$10.95</div>
+<div class="price">$10.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="507D9E83-384F-458B-BD7E-F42141503887.png"
-    alt="3 pcs Fried Chicken"
-  >
+<img
+src="507D9E83-384F-458B-BD7E-F42141503887.png"
+alt="3 pcs Fried Chicken"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>3 pcs Fried Chicken</h3>
+<h3>3 pcs Fried Chicken</h3>
 
-      <p class="description">
-        Three pieces of crispy Caribbean-style fried chicken,
-        served with your choice of side and cornbread.
-      </p>
+<p class="description">
+Three pieces of crispy Caribbean-style fried chicken,
+served with your choice of side and cornbread.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$12.95</div>
+<div class="price">$12.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="751707ED-9296-48DE-AEB3-F8B9BB6BBD0E.png"
-    alt="3 White Meat"
-  >
+<img
+src="751707ED-9296-48DE-AEB3-F8B9BB6BBD0E.png"
+alt="3 White Meat"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>3 White Meat</h3>
+<h3>3 White Meat</h3>
 
-      <p class="description">
-        Three pieces of crispy Caribbean fried chicken,
-        featuring two bone-in chicken breasts and one jumbo
-        chicken piece. Served with your choice of side,
-        coleslaw and cornbread.
-      </p>
+<p class="description">
+Three pieces of crispy Caribbean fried chicken,
+featuring two bone-in chicken breasts and one jumbo
+chicken piece. Served with your choice of side,
+coleslaw and cornbread.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$16.50</div>
+<div class="price">$16.50</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="B6F657A3-258A-40BE-80A5-8CCBB9584AC9.png"
-    alt="4 pcs Fried Chicken"
-  >
+<img
+src="B6F657A3-258A-40BE-80A5-8CCBB9584AC9.png"
+alt="4 pcs Fried Chicken"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>4 pcs Fried Chicken</h3>
+<h3>4 pcs Fried Chicken</h3>
 
-      <p class="description">
-        Four pieces of crispy Caribbean-style fried chicken,
-        served with your choice of side and cornbread.
-      </p>
+<p class="description">
+Four pieces of crispy Caribbean-style fried chicken,
+served with your choice of side and cornbread.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$15.50</div>
+<div class="price">$15.50</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="BF0C5FB5-62EF-43A3-9C13-76023FE7C7D3.png"
-    alt="4 pcs Dark and White Fried Chicken"
-  >
+<img
+src="BF0C5FB5-62EF-43A3-9C13-76023FE7C7D3.png"
+alt="4 pcs Dark and White Fried Chicken"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>4 pcs Dark &amp; White</h3>
+<h3>4 pcs Dark &amp; White</h3>
 
-      <p class="description">
-        Four pieces of crispy Caribbean-style fried chicken:
-        1 breast, 1 wing, 1 thigh, and 1 drumstick,
-        served with your choice of side and cornbread.
-      </p>
+<p class="description">
+Four pieces of crispy Caribbean-style fried chicken:
+1 breast, 1 wing, 1 thigh, and 1 drumstick,
+served with your choice of side and cornbread.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$15.50</div>
+<div class="price">$15.50</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="4471D56D-4218-45FF-B7E0-515C7338FC95.png"
-    alt="4 pcs Chicken Tenders"
-  >
+<img
+src="4471D56D-4218-45FF-B7E0-515C7338FC95.png"
+alt="4 pcs Chicken Tenders"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>4 pcs Chicken Tenders</h3>
+<h3>4 pcs Chicken Tenders</h3>
 
-      <p class="description">
-        Four crispy chicken tenders served with cornbread
-        and your choice of side.
-      </p>
+<p class="description">
+Four crispy chicken tenders served with cornbread
+and your choice of side.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$14.95</div>
+<div class="price">$14.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="D256BF21-5ECE-4D5E-BE0E-3D24EFF64EBA.png"
-    alt="Family Choice"
-  >
+<img
+src="D256BF21-5ECE-4D5E-BE0E-3D24EFF64EBA.png"
+alt="Family Choice"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Family Choice</h3>
+<h3>Family Choice</h3>
 
-      <p class="description">
-        A delicious family-style meal featuring our crispy
-        Caribbean fried chicken, served with your choice
-        of sides and cornbread.
-      </p>
+<p class="description">
+A delicious family-style meal featuring our crispy
+Caribbean fried chicken, served with your choice
+of sides and cornbread.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$26.95</div>
+<div class="price">$26.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="3A900A76-9947-4EB2-804F-F973B673EBD8.png"
-    alt="Fried Jumbo Shrimp"
-  >
+<img
+src="3A900A76-9947-4EB2-804F-F973B673EBD8.png"
+alt="Fried Jumbo Shrimp"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Fried Jumbo Shrimp</h3>
+<h3>Fried Jumbo Shrimp</h3>
 
-      <p class="description">
-        Crispy golden jumbo shrimp, freshly fried and full
-        of flavor. Served with creamy coleslaw, warm
-        cornbread, and your choice of side.
-      </p>
-
-    </div>
-
-    <div class="price">$15.50</div>
-
-  </div>
+<p class="description">
+Crispy golden jumbo shrimp, freshly fried and full
+of flavor. Served with creamy coleslaw, warm
+cornbread, and your choice of side.
+</p>
 
 </div>
 
+<div class="price">$15.50</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -864,101 +914,99 @@ footer p {
 
 <h2>🍗 Wings</h2>
 
-
 <div class="item">
 
-  <img
-    src="IMG_1705.jpeg"
-    alt="Caribbean Style Wings"
-  >
+<img
+src="IMG_1705.jpeg"
+alt="Caribbean Style Wings"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Whole Wings</h3>
+<h3>Whole Wings</h3>
 
-      <p class="description">
-        Crispy Caribbean-style wings, freshly fried and
-        full of flavor. Served with coleslaw, cornbread,
-        and your choice of side.
-      </p>
+<p class="description">
+Crispy Caribbean-style wings, freshly fried and
+full of flavor. Served with coleslaw, cornbread,
+and your choice of side.
+</p>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>3 Whole Wings</h3>
+<h3>3 Whole Wings</h3>
 
-      <p class="description">
-        Crispy Caribbean-style wings, freshly fried and
-        full of flavor. Served with coleslaw, cornbread,
-        and your choice of side.
-      </p>
+<p class="description">
+Crispy Caribbean-style wings, freshly fried and
+full of flavor. Served with coleslaw, cornbread,
+and your choice of side.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$12.95</div>
+<div class="price">$12.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>5 Whole Wings</h3>
+<h3>5 Whole Wings</h3>
 
-      <p class="description">
-        Crispy Caribbean-style wings, freshly fried and
-        full of flavor. Served with coleslaw, cornbread,
-        and your choice of side.
-      </p>
+<p class="description">
+Crispy Caribbean-style wings, freshly fried and
+full of flavor. Served with coleslaw, cornbread,
+and your choice of side.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$15.95</div>
+<div class="price">$15.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>10 Whole Wings</h3>
+<h3>10 Whole Wings</h3>
 
-      <p class="description">
-        Ten crispy Caribbean-style wings, freshly fried
-        and full of flavor. Served with coleslaw,
-        cornbread, and your choice of side.
-      </p>
-
-    </div>
-
-    <div class="price">$26.95</div>
-
-  </div>
+<p class="description">
+Ten crispy Caribbean-style wings, freshly fried
+and full of flavor. Served with coleslaw,
+cornbread, and your choice of side.
+</p>
 
 </div>
 
+<div class="price">$26.95</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -974,79 +1022,78 @@ footer p {
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>House Salad</h3>
+<h3>House Salad</h3>
 
-      <p class="description">
-        Fresh house salad prepared with crisp vegetables.
-        Add Chicken +$3.50 · Add Shrimp +$7.50.
-      </p>
+<p class="description">
+Fresh house salad prepared with crisp vegetables.
+Add Chicken +$3.50 · Add Shrimp +$7.50.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$5.50</div>
+<div class="price">$5.50</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="A38C3949-12E0-4D0E-9616-577EEF501C1E.png"
-    alt="Octopus Salad"
-  >
+<img
+src="A38C3949-12E0-4D0E-9616-577EEF501C1E.png"
+alt="Octopus Salad"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Octopus Salad</h3>
+<h3>Octopus Salad</h3>
 
-      <p class="description">
-        Fresh octopus salad with bright citrus flavors.
-        Served with your choice of side.
-      </p>
+<p class="description">
+Fresh octopus salad with bright citrus flavors.
+Served with your choice of side.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$18.95</div>
+<div class="price">$18.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="C7A62863-8091-474A-9111-A89440F412A7.png"
-    alt="Shrimp Ceviche"
-  >
+<img
+src="C7A62863-8091-474A-9111-A89440F412A7.png"
+alt="Shrimp Ceviche"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Shrimp Ceviche</h3>
+<h3>Shrimp Ceviche</h3>
 
-      <p class="description">
-        Fresh shrimp ceviche with bright citrus.
-        Served with your choice of side.
-      </p>
-
-    </div>
-
-    <div class="price">$14.50</div>
-
-  </div>
+<p class="description">
+Fresh shrimp ceviche with bright citrus.
+Served with your choice of side.
+</p>
 
 </div>
 
+<div class="price">$14.50</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1062,128 +1109,127 @@ footer p {
 
 <div class="item">
 
-  <img
-    src="IMG_2186.jpeg"
-    alt="Caribbean Red Snapper"
-  >
+<img
+src="IMG_2186.jpeg"
+alt="Caribbean Red Snapper"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Caribbean Red Snapper</h3>
+<h3>Caribbean Red Snapper</h3>
 
-      <p class="description">
-        Whole Caribbean red snapper, fried to perfection.
-        Served with a House Salad and your choice of side.
-      </p>
+<p class="description">
+Whole Caribbean red snapper, fried to perfection.
+Served with a House Salad and your choice of side.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$26.95</div>
+<div class="price">$26.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="IMG_2199.jpeg"
-    alt="Garlic Shrimp"
-  >
+<img
+src="IMG_2199.jpeg"
+alt="Garlic Shrimp"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Garlic Shrimp</h3>
+<h3>Garlic Shrimp</h3>
 
-      <p class="description">
-        Tender shrimp cooked in a flavorful garlic sauce,
-        served with your choice of side, coleslaw and cornbread.
-      </p>
+<p class="description">
+Tender shrimp cooked in a flavorful garlic sauce,
+served with your choice of side, coleslaw and cornbread.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$15.95</div>
+<div class="price">$15.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="8C34A297-205B-41B6-A4EF-074A40B717F5.png"
-    alt="Filet-O-Fish"
-  >
+<img
+src="8C34A297-205B-41B6-A4EF-074A40B717F5.png"
+alt="Filet-O-Fish"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Filet-O-Fish</h3>
+<h3>Filet-O-Fish</h3>
 
-      <p class="description">
-        Lightly breaded fried fish filet served with
-        coleslaw, cornbread and your choice of side.
-      </p>
+<p class="description">
+Lightly breaded fried fish filet served with
+coleslaw, cornbread and your choice of side.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$14.95</div>
+<div class="price">$14.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Yaroa de Papas</h3>
+<h3>Yaroa de Papas</h3>
 
-      <p class="description">
-        French fries topped with chicken in red sauce,
-        cheese, ketchup and mayonnaise.
-      </p>
+<p class="description">
+French fries topped with chicken in red sauce,
+cheese, ketchup and mayonnaise.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$15.95</div>
+<div class="price">$15.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Yaroa de Plátano Maduro</h3>
+<h3>Yaroa de Plátano Maduro</h3>
 
-      <p class="description">
-        Mashed sweet plantains topped with chicken in red sauce,
-        cheese, ketchup and mayonnaise.
-      </p>
-
-    </div>
-
-    <div class="price">$15.95</div>
-
-  </div>
+<p class="description">
+Mashed sweet plantains topped with chicken in red sauce,
+cheese, ketchup and mayonnaise.
+</p>
 
 </div>
 
+<div class="price">$15.95</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1199,57 +1245,56 @@ footer p {
 
 <div class="item">
 
-  <img
-    src="5789576C-5C78-433C-919F-BB4F225940F0.jpeg"
-    alt="Kids Meal - Chicken Tenders"
-  >
+<img
+src="5789576C-5C78-433C-919F-BB4F225940F0.jpeg"
+alt="Kids Meal - Chicken Tenders"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Kids Meal – Chicken Tenders</h3>
+<h3>Kids Meal – Chicken Tenders</h3>
 
-      <p class="description">
-        2 crispy chicken tenders served with golden
-        French fries.
-      </p>
+<p class="description">
+2 crispy chicken tenders served with golden
+French fries.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$6.95</div>
+<div class="price">$6.95</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="7BB7C606-DCF1-4CF4-A3D3-5CEF43EECEBB.png"
-    alt="Kids Meal - Jumbo Shrimp"
-  >
+<img
+src="7BB7C606-DCF1-4CF4-A3D3-5CEF43EECEBB.png"
+alt="Kids Meal - Jumbo Shrimp"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Kids Meal – Jumbo Shrimp</h3>
+<h3>Kids Meal – Jumbo Shrimp</h3>
 
-      <p class="description">
-        2 crispy jumbo fried shrimp served with golden
-        French fries.
-      </p>
-
-    </div>
-
-    <div class="price">$6.95</div>
-
-  </div>
+<p class="description">
+2 crispy jumbo fried shrimp served with golden
+French fries.
+</p>
 
 </div>
 
+<div class="price">$6.95</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1265,103 +1310,102 @@ footer p {
 
 <div class="item">
 
-  <img
-    src="3320E33A-E85B-4133-BAAE-465A50C484BF.png"
-    alt="Passion Fruit Juice"
-  >
+<img
+src="3320E33A-E85B-4133-BAAE-465A50C484BF.png"
+alt="Passion Fruit Juice"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Passion Fruit</h3>
+<h3>Passion Fruit</h3>
 
-      <p class="description">
-        Refreshing natural passion fruit juice,
-        freshly prepared and full of tropical flavor.
-      </p>
+<p class="description">
+Refreshing natural passion fruit juice,
+freshly prepared and full of tropical flavor.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$3.75</div>
+<div class="price">$3.75</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="DE95B025-9E5B-4DF0-8D21-B35935667717.png"
-    alt="Jugo de Guanábana"
-  >
+<img
+src="DE95B025-9E5B-4DF0-8D21-B35935667717.png"
+alt="Jugo de Guanábana"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Jugo de Guanábana</h3>
+<h3>Jugo de Guanábana</h3>
 
-      <p class="description">
-        Refreshing and creamy guanábana juice.
-      </p>
+<p class="description">
+Refreshing and creamy guanábana juice.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$3.75</div>
+<div class="price">$3.75</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Jugo de Limón</h3>
+<h3>Jugo de Limón</h3>
 
-      <p class="description">
-        Refreshing lemon juice.
-      </p>
+<p class="description">
+Refreshing lemon juice.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$3.75</div>
+<div class="price">$3.75</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <img
-    src="4D296F4A-3C88-47A7-8379-EF2276217F5A.png"
-    alt="Agua de Jamaica"
-  >
+<img
+src="4D296F4A-3C88-47A7-8379-EF2276217F5A.png"
+alt="Agua de Jamaica"
+>
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Agua de Jamaica</h3>
+<h3>Agua de Jamaica</h3>
 
-      <p class="description">
-        Refreshing hibiscus drink with a naturally rich flavor.
-      </p>
-
-    </div>
-
-    <div class="price">$3.75</div>
-
-  </div>
+<p class="description">
+Refreshing hibiscus drink with a naturally rich flavor.
+</p>
 
 </div>
 
+<div class="price">$3.75</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1377,45 +1421,44 @@ footer p {
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Passion Fruit Mousse</h3>
+<h3>Passion Fruit Mousse</h3>
 
-      <p class="description">
-        Smooth and creamy passion fruit mousse.
-      </p>
+<p class="description">
+Smooth and creamy passion fruit mousse.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">$4.00</div>
+<div class="price">$4.00</div>
 
-  </div>
+</div>
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Quesillo</h3>
+<h3>Quesillo</h3>
 
-      <p class="description">
-        Traditional creamy caramel flan.
-      </p>
-
-    </div>
-
-    <div class="price">$4.75</div>
-
-  </div>
+<p class="description">
+Traditional creamy caramel flan.
+</p>
 
 </div>
 
+<div class="price">$4.75</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1431,40 +1474,42 @@ footer p {
 
 <div class="greys-banner">
 
-  <img
-    src="5DE996BD-9F2A-4909-B53A-31FDE7A428FF.jpeg"
-    alt="Grey's Bakery"
-  >
+<img
+src="5DE996BD-9F2A-4909-B53A-31FDE7A428FF.jpeg"
+alt="Grey's Bakery"
+>
 
 </div>
 
 
+<!-- BLACK BUTTON + EXTRA SPACE BELOW -->
+
 <a
-  href="greys-cake.html"
-  class="greys-button"
+href="greys-cake.html"
+class="greys-button"
 >
-  🎂 Click Here to See the Cake Library
+🎂 Click Here to See the Cake Library
 </a>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Grey's Cake</h3>
+<h3>Grey's Cake</h3>
 
-      <p class="description">
-        Freshly made cakes and desserts by Grey's Bakery.
-        Ask us about available cakes and custom orders.
-      </p>
+<p class="description">
+Freshly made cakes and desserts by Grey's Bakery.
+Ask us about available cakes and custom orders.
+</p>
 
-    </div>
+</div>
 
-    <div class="price">Ask us</div>
+<div class="price">Ask us</div>
 
-  </div>
+</div>
 
 </div>
 
@@ -1483,24 +1528,23 @@ footer p {
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Cold Drinks</h3>
+<h3>Cold Drinks</h3>
 
-      <p class="description">
-        Ask about our selection of refreshing cold drinks.
-      </p>
-
-    </div>
-
-    <div class="price">Ask us</div>
-
-  </div>
+<p class="description">
+Ask about our selection of refreshing cold drinks.
+</p>
 
 </div>
 
+<div class="price">Ask us</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1516,34 +1560,33 @@ footer p {
 
 <div class="note">
 
-  Perfect for birthdays, family gatherings,
-  celebrations and special events.
+Perfect for birthdays, family gatherings,
+celebrations and special events.
 
 </div>
 
 
 <div class="item">
 
-  <div class="item-top">
+<div class="item-top">
 
-    <div>
+<div>
 
-      <h3>Party Packages</h3>
+<h3>Party Packages</h3>
 
-      <p class="description">
-        Custom packages available for your event,
-        including chicken, rice &amp; beans, pasta salad
-        and other favorites.
-      </p>
-
-    </div>
-
-    <div class="price">Ask us</div>
-
-  </div>
+<p class="description">
+Custom packages available for your event,
+including chicken, rice &amp; beans, pasta salad
+and other favorites.
+</p>
 
 </div>
 
+<div class="price">Ask us</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1557,8 +1600,8 @@ footer p {
 <h2>📲 Follow Us</h2>
 
 <p class="social-message">
-  Follow us, connect with us,
-  and leave us a review!
+Follow us, connect with us,
+and leave us a review!
 </p>
 
 
@@ -1566,52 +1609,87 @@ footer p {
 
 
 <!-- ========================= -->
-<!-- GREY'S BAKERY INSTAGRAM -->
+<!-- INSTAGRAM - GREY'S BAKERY -->
 <!-- ========================= -->
 
 <a
-  href="https://www.instagram.com/greys_bakery.oh?utm_source=qr"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="social-link"
-  aria-label="Grey's Bakery Instagram"
+href="https://www.instagram.com/greys_bakery.oh?utm_source=qr"
+target="_blank"
+rel="noopener noreferrer"
+class="social-link"
+aria-label="Grey's Bakery Instagram"
 >
+
 
 <svg
-  class="social-svg"
-  viewBox="0 0 24 24"
-  aria-hidden="true"
+class="instagram-logo"
+viewBox="0 0 24 24"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
 >
 
+<defs>
+
+<linearGradient
+id="instagramGradient"
+x1="0%"
+y1="100%"
+x2="100%"
+y2="0%"
+>
+
+<stop offset="0%" stop-color="#FFD600"/>
+
+<stop offset="50%" stop-color="#FF0069"/>
+
+<stop offset="100%" stop-color="#7638FA"/>
+
+</linearGradient>
+
+</defs>
+
+
 <rect
-  x="3"
-  y="3"
-  width="18"
-  height="18"
-  rx="5"
-  ry="5"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
+x="2"
+y="2"
+width="20"
+height="20"
+rx="6"
+fill="url(#instagramGradient)"
 />
 
-<circle
-  cx="12"
-  cy="12"
-  r="4"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
+
+<rect
+x="6.5"
+y="6.5"
+width="11"
+height="11"
+rx="3.5"
+fill="none"
+stroke="white"
+stroke-width="1.8"
 />
 
+
 <circle
-  cx="17.5"
-  cy="6.5"
-  r="1.3"
-  fill="currentColor"
+cx="12"
+cy="12"
+r="2.7"
+fill="none"
+stroke="white"
+stroke-width="1.8"
+/>
+
+
+<circle
+cx="16.6"
+cy="7.4"
+r="1.1"
+fill="white"
 />
 
 </svg>
+
 
 <strong>Instagram</strong>
 
@@ -1623,22 +1701,22 @@ footer p {
 <!-- ========================= -->
 
 <a
-  href="https://www.facebook.com/share/19SF2bvWpy/?mibextid=wwXIfr"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="social-link"
-  aria-label="Facebook"
+href="https://www.facebook.com/share/19SF2bvWpy/?mibextid=wwXIfr"
+target="_blank"
+rel="noopener noreferrer"
+class="social-link"
+aria-label="Facebook"
 >
 
 <svg
-  class="social-svg"
-  viewBox="0 0 24 24"
-  aria-hidden="true"
+class="social-svg"
+viewBox="0 0 24 24"
+aria-hidden="true"
 >
 
 <path
-  fill="currentColor"
-  d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.3 1.6-4.3 4.4V10H7.3v3h2.8v8h3.4z"
+fill="currentColor"
+d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.3 1.6-4.3 4.4V10H7.3v3h2.8v8h3.4z"
 />
 
 </svg>
@@ -1653,43 +1731,45 @@ footer p {
 <!-- ========================= -->
 
 <a
-  href="https://www.google.com/search?q=pica+pollo+west+google+reviews"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="social-link"
-  aria-label="Leave us a Google Review"
+href="https://www.google.com/search?q=pica+pollo+west+google+reviews"
+target="_blank"
+rel="noopener noreferrer"
+class="social-link"
+aria-label="Leave us a Google Review"
 >
 
+
 <svg
-  class="social-svg"
-  viewBox="0 0 24 24"
-  aria-hidden="true"
+class="google-review-icon"
+viewBox="0 0 24 24"
+aria-hidden="true"
 >
 
 <circle
-  cx="12"
-  cy="12"
-  r="9"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
+cx="12"
+cy="12"
+r="9"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
 />
 
 <path
-  d="M8 12h8"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
+d="M8 12h8"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
 />
 
 <path
-  d="M12 8v8"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
+d="M12 8v8"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
 />
 
 </svg>
+
 
 <strong>Google Reviews</strong>
 
@@ -1710,7 +1790,7 @@ footer p {
 <h2>🛍️ Order Now</h2>
 
 <p class="order-message">
-  Order your favorite Pica Pollo West today!
+Order your favorite Pica Pollo West today!
 </p>
 
 
@@ -1720,8 +1800,8 @@ footer p {
 <!-- PHONE -->
 
 <a
-  href="tel:+12167270070"
-  class="order-link phone-link"
+href="tel:+12167270070"
+class="order-link phone-link"
 >
 
 <span class="order-icon at-icon">
@@ -1742,10 +1822,10 @@ footer p {
 <!-- DOORDASH -->
 
 <a
-  href="https://www.doordash.com/store/pica-pollo-west-%28w-117th-st%29-cleveland-24648678/"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="order-link"
+href="https://www.doordash.com/store/pica-pollo-west-%28w-117th-st%29-cleveland-24648678/"
+target="_blank"
+rel="noopener noreferrer"
+class="order-link"
 >
 
 <span class="order-icon delivery-icon">
@@ -1766,10 +1846,10 @@ Delivery &amp; Pickup
 <!-- UBER EATS -->
 
 <a
-  href="https://www.ubereats.com/store/pica-pollo-west/ZkzFsfI9UYqnLW1I_-2HyA"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="order-link"
+href="https://www.ubereats.com/store/pica-pollo-west/ZkzFsfI9UYqnLW1I_-2HyA"
+target="_blank"
+rel="noopener noreferrer"
+class="order-link"
 >
 
 <span class="order-icon delivery-icon">
@@ -1804,11 +1884,11 @@ Delivery &amp; Pickup
 <h2>PICA POLLO WEST</h2>
 
 <p>
-  Caribbean Fried Chicken
+Caribbean Fried Chicken
 </p>
 
 <p>
-  📞 (216) 727-0070
+📞 (216) 727-0070
 </p>
 
 </footer>
