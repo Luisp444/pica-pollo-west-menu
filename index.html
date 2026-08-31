@@ -211,6 +211,32 @@ section h2 {
 
 
 /* ========================= */
+/* GREY'S CAKE LIBRARY BUTTON */
+/* ========================= */
+
+.greys-library-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.greys-library-button:hover {
+  transform: translateY(-2px);
+  background: #000;
+}
+
+
+/* ========================= */
 /* SOCIAL MEDIA */
 /* ========================= */
 
@@ -407,6 +433,10 @@ footer p {
   .order-link {
     width: 100%;
     min-width: 0;
+  }
+
+  .greys-library-button {
+    width: 100%;
   }
 
 }
@@ -876,12 +906,25 @@ footer p {
 
 <!-- WINGS HEADER PHOTO -->
 
-<div style="width:100%; max-width:500px; height:320px; overflow:hidden; margin:0 auto 20px auto; border-radius:14px;">
+<div style="
+  width:100%;
+  max-width:500px;
+  height:320px;
+  overflow:hidden;
+  margin:0 auto 20px auto;
+  border-radius:14px;
+">
 
   <img
     src="IMG_1705.jpeg"
     alt="Caribbean Chicken Wings"
-    style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+    style="
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+    "
   >
 
 </div>
@@ -1469,6 +1512,20 @@ footer p {
     src="5DE996BD-9F2A-4909-B53A-31FDE7A428FF.jpeg"
     alt="Grey's Bakery"
   >
+
+</div>
+
+
+<!-- GREY'S CAKE LIBRARY BUTTON -->
+
+<div style="text-align:center; margin:20px 0 25px;">
+
+  <a
+    href="greys-cake.html"
+    class="greys-library-button"
+  >
+    🎂 Click Here to See the Cake Library
+  </a>
 
 </div>
 
