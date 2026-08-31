@@ -33,7 +33,6 @@ body {
   display: block;
 }
 
-/* DIGITAL MENU TITLE */
 .digital-menu-title {
   color: white;
   font-size: 16px;
@@ -54,6 +53,11 @@ header {
   color: white;
   text-align: center;
   padding: 25px 15px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
 }
 
 header p {
@@ -114,15 +118,6 @@ section h2 {
   box-shadow: 0 4px 15px rgba(0,0,0,0.07);
 }
 
-.item img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-  margin: 0 auto 15px;
-  border-radius: 14px;
-}
-
 .item-top {
   display: flex;
   justify-content: space-between;
@@ -157,7 +152,36 @@ section h2 {
   line-height: 1.5;
 }
 
-/* SOCIAL MEDIA */
+/* FOOD IMAGES */
+.item img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 14px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer h2 {
+  margin: 0 0 10px;
+  border: none;
+  color: white;
+}
+
+footer p {
+  color: #ddd;
+  margin: 7px 0;
+}
+
+/* SOCIAL */
 .social-section {
   text-align: center;
   margin: 40px 0 20px;
@@ -196,37 +220,12 @@ section h2 {
   font-size: 16px;
 }
 
-/* DRINK IMAGES */
-.drink-image {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto 12px;
-}
-
-/* FOOTER */
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-footer h2 {
-  margin: 0 0 10px;
-  border: none;
-  color: white;
-}
-
-footer p {
-  color: #ddd;
-  margin: 7px 0;
-}
-
 /* MOBILE */
 @media (max-width: 600px) {
+
+  header h1 {
+    font-size: 27px;
+  }
 
   header p {
     font-size: 15px;
@@ -261,7 +260,8 @@ footer p {
 <div class="logo-banner">
   <img
     src="582646D8-D62A-4BE4-A929-F0DA4592F465.png"
-    alt="Pica Pollo West">
+    alt="Pica Pollo West"
+  >
 </div>
 
 <div class="digital-menu-title">
@@ -271,7 +271,6 @@ footer p {
 <header>
   <p>Caribbean Fried Chicken · 100% Dominican</p>
 </header>
-
 
 <!-- CATEGORY MENU -->
 <nav class="categories">
@@ -289,9 +288,7 @@ footer p {
 
 </nav>
 
-
 <main>
-
 
 <!-- ========================= -->
 <!-- STARTERS -->
@@ -372,6 +369,7 @@ footer p {
 
 <h2>🍗 Caribbean Fried Chicken</h2>
 
+<!-- 2 PCS -->
 <div class="item">
 
   <img
@@ -392,7 +390,7 @@ footer p {
 
 </div>
 
-
+<!-- 3 PCS -->
 <div class="item">
 
   <img
@@ -413,7 +411,7 @@ footer p {
 
 </div>
 
-
+<!-- 3 WHITE MEAT -->
 <div class="item">
 
   <img
@@ -424,18 +422,21 @@ footer p {
   <div class="item-top">
     <div>
       <h3>3 White Meat</h3>
+
       <p class="description">
-        Three pieces of crispy Caribbean fried chicken, featuring
-        two bone-in chicken breasts and one jumbo chicken piece.
-        Served with your choice of side, coleslaw and cornbread.
+        Three pieces of crispy Caribbean fried chicken,
+        featuring two bone-in chicken breasts and one jumbo
+        chicken piece. Served with your choice of side,
+        coleslaw and cornbread.
       </p>
     </div>
+
     <div class="price">$16.50</div>
   </div>
 
 </div>
 
-
+<!-- 4 PCS -->
 <div class="item">
 
   <img
@@ -446,17 +447,19 @@ footer p {
   <div class="item-top">
     <div>
       <h3>4 pcs Fried Chicken</h3>
+
       <p class="description">
         Four pieces of crispy Caribbean-style fried chicken,
         served with your choice of side and cornbread.
       </p>
     </div>
+
     <div class="price">$15.50</div>
   </div>
 
 </div>
 
-
+<!-- 4 PCS DARK & WHITE -->
 <div class="item">
 
   <img
@@ -467,34 +470,43 @@ footer p {
   <div class="item-top">
     <div>
       <h3>4 pcs Dark & White</h3>
+
       <p class="description">
         Four pieces of crispy Caribbean-style fried chicken:
         1 breast, 1 wing, 1 thigh, and 1 drumstick,
         served with your choice of side and cornbread.
       </p>
     </div>
+
     <div class="price">$15.50</div>
   </div>
 
 </div>
 
-
+<!-- 4 PCS CHICKEN TENDERS -->
 <div class="item">
+
+  <img
+    src="4471D56D-4218-45FF-B7E0-515C7338FC95.png"
+    alt="4 pcs Chicken Tenders"
+  >
 
   <div class="item-top">
     <div>
       <h3>4 pcs Chicken Tenders</h3>
+
       <p class="description">
         Four crispy chicken tenders served with cornbread
         and your choice of side.
       </p>
     </div>
-    <div class="price">$15.50</div>
+
+    <div class="price">$14.95</div>
   </div>
 
 </div>
 
-
+<!-- FAMILY CHOICE -->
 <div class="item">
 
   <img
@@ -505,17 +517,20 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Family Choice</h3>
+
       <p class="description">
-        A delicious family-style meal featuring our crispy Caribbean
-        fried chicken, served with your choice of sides and cornbread.
+        A delicious family-style meal featuring our crispy
+        Caribbean fried chicken, served with your choice
+        of sides and cornbread.
       </p>
     </div>
+
     <div class="price">$26.95</div>
   </div>
 
 </div>
 
-
+<!-- FRIED JUMBO SHRIMP -->
 <div class="item">
 
   <img
@@ -526,11 +541,14 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Fried Jumbo Shrimp</h3>
+
       <p class="description">
         Crispy golden jumbo shrimp, freshly fried and full of flavor.
-        Served with creamy coleslaw, warm cornbread, and your choice of side.
+        Served with creamy coleslaw, warm cornbread, and your choice
+        of side.
       </p>
     </div>
+
     <div class="price">$15.50</div>
   </div>
 
@@ -595,7 +613,6 @@ footer p {
 <h2>🥗 Salads</h2>
 
 <div class="item">
-
   <div class="item-top">
     <div>
       <h3>House Salad</h3>
@@ -606,10 +623,9 @@ footer p {
     </div>
     <div class="price">$5.50</div>
   </div>
-
 </div>
 
-
+<!-- OCTOPUS SALAD -->
 <div class="item">
 
   <img
@@ -620,17 +636,19 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Octopus Salad</h3>
+
       <p class="description">
         Fresh octopus salad with bright citrus flavors.
         Served with your choice of side.
       </p>
     </div>
+
     <div class="price">$18.95</div>
   </div>
 
 </div>
 
-
+<!-- SHRIMP CEVICHE -->
 <div class="item">
 
   <img
@@ -641,11 +659,13 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Shrimp Ceviche</h3>
+
       <p class="description">
         Fresh shrimp ceviche with bright citrus.
         Served with your choice of side.
       </p>
     </div>
+
     <div class="price">$14.50</div>
   </div>
 
@@ -662,6 +682,7 @@ footer p {
 
 <h2>⭐ Specials</h2>
 
+<!-- RED SNAPPER -->
 <div class="item">
 
   <img
@@ -672,17 +693,19 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Caribbean Red Snapper</h3>
+
       <p class="description">
         Whole Caribbean red snapper, fried to perfection.
         Served with a House Salad and your choice of side.
       </p>
     </div>
+
     <div class="price">$26.95</div>
   </div>
 
 </div>
 
-
+<!-- GARLIC SHRIMP -->
 <div class="item">
 
   <img
@@ -693,17 +716,19 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Garlic Shrimp</h3>
+
       <p class="description">
         Tender shrimp cooked in a flavorful garlic sauce,
         served with your choice of side, coleslaw and cornbread.
       </p>
     </div>
+
     <div class="price">$15.95</div>
   </div>
 
 </div>
 
-
+<!-- FILET-O-FISH -->
 <div class="item">
 
   <img
@@ -714,43 +739,49 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Filet-O-Fish</h3>
+
       <p class="description">
         Lightly breaded fried fish filet served with coleslaw,
         cornbread and your choice of side.
       </p>
     </div>
+
     <div class="price">$14.95</div>
   </div>
 
 </div>
 
-
+<!-- YAROA DE PAPAS -->
 <div class="item">
 
   <div class="item-top">
     <div>
       <h3>Yaroa de Papas</h3>
+
       <p class="description">
         French fries topped with chicken in red sauce,
         cheese, ketchup and mayonnaise.
       </p>
     </div>
+
     <div class="price">$15.95</div>
   </div>
 
 </div>
 
-
+<!-- YAROA DE PLATANO MADURO -->
 <div class="item">
 
   <div class="item-top">
     <div>
       <h3>Yaroa de Plátano Maduro</h3>
+
       <p class="description">
         Mashed sweet plantains topped with chicken in red sauce,
         cheese, ketchup and mayonnaise.
       </p>
     </div>
+
     <div class="price">$15.95</div>
   </div>
 
@@ -767,7 +798,7 @@ footer p {
 
 <h2>👧 Kids Meals</h2>
 
-
+<!-- KIDS CHICKEN TENDERS -->
 <div class="item">
 
   <img
@@ -778,16 +809,18 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Kids Meal – Chicken Tenders</h3>
+
       <p class="description">
         2 crispy chicken tenders served with golden French fries.
       </p>
     </div>
+
     <div class="price">$6.95</div>
   </div>
 
 </div>
 
-
+<!-- KIDS JUMBO SHRIMP -->
 <div class="item">
 
   <img
@@ -798,10 +831,12 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Kids Meal – Jumbo Shrimp</h3>
+
       <p class="description">
         2 crispy jumbo fried shrimp served with golden French fries.
       </p>
     </div>
+
     <div class="price">$6.95</div>
   </div>
 
@@ -818,7 +853,7 @@ footer p {
 
 <h2>🧃 Natural Juices</h2>
 
-
+<!-- PASSION FRUIT -->
 <div class="item">
 
   <img
@@ -829,17 +864,19 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Passion Fruit</h3>
+
       <p class="description">
         Refreshing natural passion fruit juice,
         freshly prepared and full of tropical flavor.
       </p>
     </div>
+
     <div class="price">$3.75</div>
   </div>
 
 </div>
 
-
+<!-- GUANABANA -->
 <div class="item">
 
   <img
@@ -850,46 +887,35 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Jugo de Guanábana</h3>
+
       <p class="description">
         Refreshing and creamy guanábana juice.
       </p>
     </div>
+
     <div class="price">$3.75</div>
   </div>
 
 </div>
 
-
-<div class="item">
-
-  <div class="item-top">
-    <div>
-      <h3>Jugo de Tamarindo</h3>
-      <p class="description">
-        Refreshing natural tamarind juice with a delicious tropical flavor.
-      </p>
-    </div>
-    <div class="price">$3.75</div>
-  </div>
-
-</div>
-
-
+<!-- LIMON -->
 <div class="item">
 
   <div class="item-top">
     <div>
       <h3>Jugo de Limón</h3>
+
       <p class="description">
         Refreshing natural lemon juice.
       </p>
     </div>
+
     <div class="price">$3.75</div>
   </div>
 
 </div>
 
-
+<!-- JAMAICA -->
 <div class="item">
 
   <img
@@ -900,10 +926,12 @@ footer p {
   <div class="item-top">
     <div>
       <h3>Agua de Jamaica</h3>
+
       <p class="description">
         Refreshing hibiscus drink with a naturally rich flavor.
       </p>
     </div>
+
     <div class="price">$3.75</div>
   </div>
 
@@ -921,39 +949,51 @@ footer p {
 <h2>🍰 Desserts – Grey's Cake</h2>
 
 <div class="item">
+
   <div class="item-top">
     <div>
       <h3>Passion Fruit Mousse</h3>
+
       <p class="description">
         Smooth and creamy passion fruit mousse.
       </p>
     </div>
+
     <div class="price">$4.00</div>
   </div>
+
 </div>
 
 <div class="item">
+
   <div class="item-top">
     <div>
       <h3>Quesillo</h3>
+
       <p class="description">
         Traditional creamy caramel flan.
       </p>
     </div>
+
     <div class="price">$4.75</div>
   </div>
+
 </div>
 
 <div class="item">
+
   <div class="item-top">
     <div>
       <h3>Grey's Cake</h3>
+
       <p class="description">
         Freshly made cakes and desserts by Grey's Bakery.
       </p>
     </div>
+
     <div class="price">Ask us</div>
   </div>
+
 </div>
 
 </section>
@@ -968,15 +1008,19 @@ footer p {
 <h2>🥤 Drinks</h2>
 
 <div class="item">
+
   <div class="item-top">
     <div>
       <h3>Cold Drinks</h3>
+
       <p class="description">
         Ask about our selection of refreshing cold drinks.
       </p>
     </div>
+
     <div class="price">Ask us</div>
   </div>
+
 </div>
 
 </section>
@@ -995,16 +1039,20 @@ footer p {
 </div>
 
 <div class="item">
+
   <div class="item-top">
     <div>
       <h3>Party Packages</h3>
+
       <p class="description">
         Custom packages available for your event, including chicken,
         rice & beans, pasta salad and other favorites.
       </p>
     </div>
+
     <div class="price">Ask us</div>
   </div>
+
 </div>
 
 </section>
@@ -1019,6 +1067,8 @@ footer p {
 
 </main>
 
+
+<!-- FOOTER -->
 
 <footer>
 
