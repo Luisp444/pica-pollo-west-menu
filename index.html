@@ -67,11 +67,6 @@ header {
   padding: 25px 15px;
 }
 
-header h1 {
-  margin: 0 0 8px;
-  font-size: 32px;
-}
-
 header p {
   margin: 0;
   font-size: 17px;
@@ -209,30 +204,17 @@ section h2 {
   border-radius: 14px;
 }
 
-
-/* ========================= */
-/* GREY'S CAKE LIBRARY BUTTON */
-/* ========================= */
-
-.greys-library-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 14px 24px;
-  background: #222;
-  color: white;
+.greys-button {
+  display: block;
+  width: fit-content;
+  margin: 15px auto 0;
+  padding: 14px 22px;
+  background: white;
+  color: #222;
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
-  font-size: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.greys-library-button:hover {
-  transform: translateY(-2px);
-  background: #000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
 }
 
 
@@ -281,6 +263,11 @@ section h2 {
   font-weight: bold;
   font-size: 16px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
 }
 
 .social-svg {
@@ -398,10 +385,6 @@ footer p {
 
 @media (max-width: 600px) {
 
-  header h1 {
-    font-size: 27px;
-  }
-
   header p {
     font-size: 15px;
   }
@@ -435,7 +418,7 @@ footer p {
     min-width: 0;
   }
 
-  .greys-library-button {
+  .social-link {
     width: 100%;
   }
 
@@ -522,7 +505,6 @@ footer p {
 <section id="starters">
 
 <h2>🔥 Starters</h2>
-
 
 <div class="item">
 
@@ -629,12 +611,7 @@ footer p {
 </div>
 
 
-</section>
-
-
-<!-- ========================= -->
-<!-- SIDE CHOICES -->
-<!-- ========================= -->
+<!-- SIDE CHOICES MOVED HERE -->
 
 <div class="note">
 
@@ -644,6 +621,8 @@ footer p {
   Maduros · Coleslaw · Cornbread
 
 </div>
+
+</section>
 
 
 <!-- ========================= -->
@@ -904,33 +883,31 @@ footer p {
 <h2>🍗 Wings</h2>
 
 
-<!-- WINGS HEADER PHOTO -->
-
-<div style="
-  width:100%;
-  max-width:500px;
-  height:320px;
-  overflow:hidden;
-  margin:0 auto 20px auto;
-  border-radius:14px;
-">
+<div class="item">
 
   <img
     src="IMG_1705.jpeg"
-    alt="Caribbean Chicken Wings"
-    style="
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      object-position:center;
-      display:block;
-    "
+    alt="Caribbean Style Wings"
   >
+
+  <div class="item-top">
+
+    <div>
+
+      <h3>Whole Wings</h3>
+
+      <p class="description">
+        Crispy Caribbean-style wings, freshly fried and
+        full of flavor. Served with coleslaw, cornbread,
+        and your choice of side.
+      </p>
+
+    </div>
+
+  </div>
 
 </div>
 
-
-<!-- 3 WHOLE WINGS -->
 
 <div class="item">
 
@@ -955,8 +932,6 @@ footer p {
 </div>
 
 
-<!-- 5 WHOLE WINGS -->
-
 <div class="item">
 
   <div class="item-top">
@@ -980,8 +955,6 @@ footer p {
 </div>
 
 
-<!-- 10 WHOLE WINGS -->
-
 <div class="item">
 
   <div class="item-top">
@@ -992,8 +965,8 @@ footer p {
 
       <p class="description">
         Ten crispy Caribbean-style wings, freshly fried
-        and full of flavor. Served with coleslaw, cornbread,
-        and your choice of side.
+        and full of flavor. Served with coleslaw,
+        cornbread, and your choice of side.
       </p>
 
     </div>
@@ -1017,8 +990,6 @@ footer p {
 <h2>🥗 Salads</h2>
 
 
-<!-- HOUSE SALAD -->
-
 <div class="item">
 
   <div class="item-top">
@@ -1040,8 +1011,6 @@ footer p {
 
 </div>
 
-
-<!-- OCTOPUS SALAD -->
 
 <div class="item">
 
@@ -1069,8 +1038,6 @@ footer p {
 
 </div>
 
-
-<!-- SHRIMP CEVICHE -->
 
 <div class="item">
 
@@ -1111,8 +1078,6 @@ footer p {
 <h2>⭐ Specials</h2>
 
 
-<!-- RED SNAPPER -->
-
 <div class="item">
 
   <img
@@ -1139,8 +1104,6 @@ footer p {
 
 </div>
 
-
-<!-- GARLIC SHRIMP -->
 
 <div class="item">
 
@@ -1169,8 +1132,6 @@ footer p {
 </div>
 
 
-<!-- FILET O FISH -->
-
 <div class="item">
 
   <img
@@ -1198,8 +1159,6 @@ footer p {
 </div>
 
 
-<!-- YAROA DE PAPAS -->
-
 <div class="item">
 
   <div class="item-top">
@@ -1221,8 +1180,6 @@ footer p {
 
 </div>
 
-
-<!-- YAROA DE PLATANO MADURO -->
 
 <div class="item">
 
@@ -1258,8 +1215,6 @@ footer p {
 <h2>👧 Kids Meals</h2>
 
 
-<!-- KIDS TENDERS -->
-
 <div class="item">
 
   <img
@@ -1286,8 +1241,6 @@ footer p {
 
 </div>
 
-
-<!-- KIDS JUMBO SHRIMP -->
 
 <div class="item">
 
@@ -1328,8 +1281,6 @@ footer p {
 <h2>🧃 Natural Juices</h2>
 
 
-<!-- PASSION FRUIT -->
-
 <div class="item">
 
   <img
@@ -1357,8 +1308,6 @@ footer p {
 </div>
 
 
-<!-- GUANABANA -->
-
 <div class="item">
 
   <img
@@ -1385,8 +1334,6 @@ footer p {
 </div>
 
 
-<!-- LEMON -->
-
 <div class="item">
 
   <div class="item-top">
@@ -1407,8 +1354,6 @@ footer p {
 
 </div>
 
-
-<!-- JAMAICA -->
 
 <div class="item">
 
@@ -1448,8 +1393,6 @@ footer p {
 <h2>🍰 Desserts</h2>
 
 
-<!-- PASSION FRUIT MOUSSE -->
-
 <div class="item">
 
   <div class="item-top">
@@ -1470,8 +1413,6 @@ footer p {
 
 </div>
 
-
-<!-- QUESILLO -->
 
 <div class="item">
 
@@ -1516,18 +1457,12 @@ footer p {
 </div>
 
 
-<!-- GREY'S CAKE LIBRARY BUTTON -->
-
-<div style="text-align:center; margin:20px 0 25px;">
-
-  <a
-    href="greys-cake.html"
-    class="greys-library-button"
-  >
-    🎂 Click Here to See the Cake Library
-  </a>
-
-</div>
+<a
+  href="greys-cake.html"
+  class="greys-button"
+>
+  🎂 Click Here to See the Cake Library
+</a>
 
 
 <div class="item">
@@ -1640,8 +1575,8 @@ footer p {
 <h2>📲 Follow Us</h2>
 
 <p class="social-message">
-  Follow Pica Pollo West on social media
-  and stay connected with us!
+  Follow Pica Pollo West, connect with us,
+  and leave us a review!
 </p>
 
 
@@ -1723,6 +1658,30 @@ footer p {
 </svg>
 
 <strong>Facebook</strong>
+
+</a>
+
+
+<!-- GOOGLE REVIEWS -->
+
+<a
+  href="https://www.google.com/search?q=pica+pollo+west+google+reviews"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="social-link"
+  aria-label="Leave us a Google Review"
+>
+
+<span
+  style="
+    font-size:25px;
+    line-height:1;
+  "
+>
+  ⭐
+</span>
+
+<strong>Google Reviews</strong>
 
 </a>
 
