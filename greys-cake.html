@@ -31,7 +31,7 @@ body {
 
 
 /* ========================= */
-/* HEADER */
+/* HERO */
 /* ========================= */
 
 .hero {
@@ -168,7 +168,7 @@ main {
 
 
 /* ========================= */
-/* CUSTOM CAKES PLACEHOLDER */
+/* CUSTOM CAKES */
 /* ========================= */
 
 .coming-soon {
@@ -193,7 +193,7 @@ main {
 
 
 /* ========================= */
-/* ORDER / CONTACT */
+/* CONTACT */
 /* ========================= */
 
 .contact-section {
@@ -224,7 +224,10 @@ main {
 }
 
 .contact-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 14px 22px;
   background: white;
   color: #222;
@@ -232,6 +235,22 @@ main {
   border-radius: 25px;
   font-weight: bold;
   box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+}
+
+
+/* ========================= */
+/* INSTAGRAM LOGO */
+/* ========================= */
+
+.instagram-icon {
+  width: 25px;
+  height: 25px;
+  display: block;
 }
 
 
@@ -330,6 +349,10 @@ footer p {
     font-size: 25px;
   }
 
+  .contact-link {
+    width: 100%;
+  }
+
 }
 
 </style>
@@ -361,11 +384,17 @@ footer p {
 
 <nav class="page-nav">
 
-  <a href="#cakes">🎂 Custom Cakes</a>
+  <a href="#cakes">
+    🎂 Custom Cakes
+  </a>
 
-  <a href="#dessert-tables">🍰 Dessert Tables</a>
+  <a href="#dessert-tables">
+    🍰 Dessert Tables
+  </a>
 
-  <a href="index.html">← Back to Menu</a>
+  <a href="index.html">
+    ← Back to Menu
+  </a>
 
 </nav>
 
@@ -665,6 +694,9 @@ footer p {
 
   <div class="contact-links">
 
+
+    <!-- PHONE -->
+
     <a
       href="tel:+12167270070"
       class="contact-link"
@@ -673,15 +705,58 @@ footer p {
     </a>
 
 
-    <a
-  href="https://www.instagram.com/greys_bakery.oh?utm_source=qr"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="contact-link"
->
-  📲 Instagram
-</a>
+    <!-- GREY'S CAKE INSTAGRAM -->
 
+    <a
+      href="https://www.instagram.com/greys_bakery.oh?utm_source=qr"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="contact-link"
+      aria-label="Grey's Cake Instagram"
+    >
+
+      <svg
+        class="instagram-icon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <rect
+          x="3"
+          y="3"
+          width="18"
+          height="18"
+          rx="5"
+          ry="5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+
+        <circle
+          cx="12"
+          cy="12"
+          r="4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+
+        <circle
+          cx="17.5"
+          cy="6.5"
+          r="1.2"
+          fill="currentColor"
+        />
+
+      </svg>
+
+      Instagram
+
+    </a>
+
+
+    <!-- BACK TO MENU -->
 
     <a
       href="index.html"
@@ -689,6 +764,7 @@ footer p {
     >
       ← Back to Pica Pollo West
     </a>
+
 
   </div>
 
@@ -708,9 +784,13 @@ footer p {
   onclick="closeLightbox()"
 >
 
-  <span class="lightbox-close">
+  <span
+    class="lightbox-close"
+    aria-label="Close"
+  >
     &times;
   </span>
+
 
   <img
     id="lightbox-image"
@@ -749,8 +829,11 @@ footer p {
 
 function openLightbox(src) {
 
-  const lightbox = document.getElementById("lightbox");
-  const image = document.getElementById("lightbox-image");
+  const lightbox =
+    document.getElementById("lightbox");
+
+  const image =
+    document.getElementById("lightbox-image");
 
   image.src = src;
 
@@ -763,7 +846,8 @@ function openLightbox(src) {
 
 function closeLightbox() {
 
-  const lightbox = document.getElementById("lightbox");
+  const lightbox =
+    document.getElementById("lightbox");
 
   lightbox.style.display = "none";
 
