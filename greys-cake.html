@@ -10,6 +10,10 @@
 
 <style>
 
+/* ========================= */
+/* GENERAL */
+/* ========================= */
+
 * {
   box-sizing: border-box;
 }
@@ -123,21 +127,32 @@ main {
 
 
 /* ========================= */
-/* GALLERY */
+/* HORIZONTAL GALLERY */
 /* ========================= */
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 5px 4px 18px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.gallery::-webkit-scrollbar {
+  height: 8px;
 }
 
 .gallery-card {
+  flex: 0 0 340px;
   background: white;
   border-radius: 16px;
   padding: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   overflow: hidden;
+  scroll-snap-align: start;
 }
 
 .gallery-card img {
@@ -152,6 +167,18 @@ main {
 
 .gallery-card img:hover {
   transform: scale(1.02);
+}
+
+
+/* ========================= */
+/* SWIPE MESSAGE */
+/* ========================= */
+
+.swipe-message {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  margin: -5px 0 20px;
 }
 
 
@@ -276,32 +303,27 @@ footer p {
 /* MOBILE */
 /* ========================= */
 
-@media (max-width: 800px) {
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .gallery-card img {
-    height: 260px;
-  }
-
-}
-
 @media (max-width: 600px) {
 
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-card img {
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
+  main {
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .gallery-section h2 {
     font-size: 25px;
+  }
+
+  .gallery-card {
+    flex: 0 0 82vw;
+  }
+
+  .gallery-card img {
+    height: 330px;
+  }
+
+  .swipe-message {
+    font-size: 13px;
   }
 
   .contact-link {
@@ -384,6 +406,10 @@ footer p {
   <p class="section-description">
     Custom cakes created by Grey's Cake for your special moments.
     Ask us about custom designs, flavors and orders.
+  </p>
+
+  <p class="swipe-message">
+    ← Swipe to explore our cakes →
   </p>
 
 
@@ -524,6 +550,10 @@ footer p {
     Beautiful dessert tables prepared for birthdays,
     celebrations and special events. Choose from a variety
     of homemade desserts and customized presentations.
+  </p>
+
+  <p class="swipe-message">
+    ← Swipe to explore our dessert tables →
   </p>
 
 
@@ -770,7 +800,7 @@ footer p {
     </a>
 
 
-    <!-- GREY'S CAKE INSTAGRAM -->
+    <!-- INSTAGRAM -->
 
     <a
       href="https://www.instagram.com/greys_bakery.oh?utm_source=qr"
