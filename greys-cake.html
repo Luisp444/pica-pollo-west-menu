@@ -1,1 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grey's Cake | Pica Pollo West</title>
+
+<style>
+
+/* ========================= */
+/* GENERAL */
+/* ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f3ee;
+  color: #222;
+}
+
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.hero {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 35px 20px 40px;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 38px;
+}
+
+.hero p {
+  margin: 0;
+  color: #ddd;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
+
+.page-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.page-nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+  background: #f1f1f1;
+  padding: 10px 16px;
+  margin: 4px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+
+/* ========================= */
+/* MAIN */
+/* ========================= */
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 18px 60px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 45px;
+}
+
+.intro h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.intro p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* ========================= */
+/* SECTIONS */
+/* ========================= */
+
+.gallery-section {
+  margin-bottom: 55px;
+  scroll-margin-top: 80px;
+}
+
+.gallery-section h2 {
+  font-size: 28px;
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #222;
+}
+
+.section-description {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+
+/* ========================= */
+/* GALLERY */
+/* ========================= */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery-card {
+  background: white;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.gallery-card img:hover {
+  transform: scale(1.02);
+}
+
+
+/* ========================= */
+/* CUSTOM CAKES PLACEHOLDER */
+/* ========================= */
+
+.coming-soon {
+  background: white;
+  border-radius: 18px;
+  padding: 35px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.coming-soon h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+
+.coming-soon p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* ========================= */
+/* ORDER / CONTACT */
+/* ========================= */
+
+.contact-section {
+  text-align: center;
+  margin-top: 55px;
+  padding: 40px 20px;
+  border-top: 3px solid #222;
+}
+
+.contact-section h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.contact-section p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-link {
+  display: inline-block;
+  padding: 14px 22px;
+  background: white;
+  color: #222;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+
+/* ========================= */
+/* LIGHTBOX */
+/* ========================= */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lightbox img {
+  max-width: 95%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer h2 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+footer p {
+  color: #ddd;
+  margin: 6px 0;
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 800px) {
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-card img {
+    height: 260px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .hero h1 {
+    font-size: 31px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card img {
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .gallery-section h2 {
+    font-size: 25px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<header class="hero">
+
+  <h1>Grey's Cake</h1>
+
+  <p>
+    Custom Cakes &amp; Dessert Tables
+  </p>
+
+</header>
+
+
+<!-- ========================= -->
+<!-- NAVIGATION -->
+<!-- ========================= -->
+
+<nav class="page-nav">
+
+  <a href="#cakes">🎂 Custom Cakes</a>
+
+  <a href="#dessert-tables">🍰 Dessert Tables</a>
+
+  <a href="index.html">← Back to Menu</a>
+
+</nav>
+
+
+<main>
+
+
+<!-- ========================= -->
+<!-- INTRO -->
+<!-- ========================= -->
+
+<div class="intro">
+
+  <h2>Made with Love</h2>
+
+  <p>
+    Beautiful cakes and desserts created for birthdays,
+    weddings, celebrations and special events.
+    Every creation can be customized for your special occasion.
+  </p>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- CUSTOM CAKES -->
+<!-- ========================= -->
+
+<section id="cakes" class="gallery-section">
+
+  <h2>🎂 Custom Cakes</h2>
+
+  <p class="section-description">
+    Custom cakes created by Grey's Cake for your special moments.
+    Ask us about custom designs, flavors and orders.
+  </p>
+
+
+  <div class="coming-soon">
+
+    <h3>More Cakes Coming Soon</h3>
+
+    <p>
+      We are adding more of Grey's Cake's custom creations.
+      Check back soon to see our cake collection.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- DESSERT TABLES -->
+<!-- ========================= -->
+
+<section id="dessert-tables" class="gallery-section">
+
+  <h2>🍰 Dessert Tables</h2>
+
+  <p class="section-description">
+    Beautiful dessert tables prepared for birthdays,
+    celebrations and special events. Choose from a variety
+    of homemade desserts and customized presentations.
+  </p>
+
+
+  <div class="gallery">
+
+
+    <!-- PHOTO 1 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="2E9C2E1F-3BB6-4192-AE6E-ADF2B4B8E5FE.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 2 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="4CD44AE7-8DD5-423E-BE4A-CA2A4600A067.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 3 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="57BBE0DD-E25F-4975-AB21-B72541514DAF.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 4 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="675E39D5-3317-48F9-B5C5-16C25128AA64.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 5 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="865BCB0A-D88C-4716-A678-5900EA28C41E.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 6 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="943DF88A-106C-452A-8DBB-0D00E2715163.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 7 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="AA600629-A8A3-458A-A6A0-D77E1DF498C9.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 8 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="B5C5FE65-7DC2-4C01-A9DE-E89E4EC5476A.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 9 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="BBBC0855-2BD4-46A1-92E4-E36314B2635C.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 10 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="BF61036A-19C3-42D5-898E-C8BA96E487B6.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 11 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="CBA5F650-42EB-4F4A-AD7C-EB31B36BC097.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 12 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="D035E789-4DFB-4B32-80EC-6D260931C649.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 13 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="D4C00E44-FCAE-487C-A0E2-D45DAD1E192F.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 14 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="DSC04650.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 15 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="DSC04656.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+    <!-- PHOTO 16 -->
+
+    <div class="gallery-card">
+
+      <img
+        src="ED905F23-1C6E-47CD-88F8-B1F74ED2DD5A.jpeg"
+        alt="Grey's Cake Dessert Table"
+        onclick="openLightbox(this.src)"
+      >
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section class="contact-section">
+
+  <h2>✨ Ready to Create Your Cake?</h2>
+
+  <p>
+    Contact Grey's Cake to discuss your custom cake
+    or dessert table for your next celebration.
+  </p>
+
+
+  <div class="contact-links">
+
+    <a
+      href="tel:+12167270070"
+      class="contact-link"
+    >
+      📞 Call Us
+    </a>
+
+
+    <a
+      href="https://www.instagram.com/picapollowest_117?igsi=c213ajZ2amxia3po&utm_source=qr"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="contact-link"
+    >
+      📲 Instagram
+    </a>
+
+
+    <a
+      href="index.html"
+      class="contact-link"
+    >
+      ← Back to Pica Pollo West
+    </a>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ========================= -->
+<!-- LIGHTBOX -->
+<!-- ========================= -->
+
+<div
+  id="lightbox"
+  class="lightbox"
+  onclick="closeLightbox()"
+>
+
+  <span class="lightbox-close">
+    &times;
+  </span>
+
+  <img
+    id="lightbox-image"
+    src=""
+    alt="Grey's Cake"
+    onclick="event.stopPropagation()"
+  >
+
+</div>
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+  <h2>GREY'S CAKE</h2>
+
+  <p>
+    Custom Cakes &amp; Dessert Tables
+  </p>
+
+  <p>
+    Pica Pollo West
+  </p>
+
+</footer>
+
+
+<!-- ========================= -->
+<!-- LIGHTBOX SCRIPT -->
+<!-- ========================= -->
+
+<script>
+
+function openLightbox(src) {
+
+  const lightbox = document.getElementById("lightbox");
+  const image = document.getElementById("lightbox-image");
+
+  image.src = src;
+
+  lightbox.style.display = "flex";
+
+  document.body.style.overflow = "hidden";
+
+}
+
+
+function closeLightbox() {
+
+  const lightbox = document.getElementById("lightbox");
+
+  lightbox.style.display = "none";
+
+  document.body.style.overflow = "";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
