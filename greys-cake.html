@@ -31,27 +31,19 @@ body {
 
 
 /* ========================= */
-/* HERO */
+/* GREY'S CAKE HEADER IMAGE */
 /* ========================= */
 
-.hero {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 35px 20px 40px;
+.greys-header {
+  width: 100%;
+  background: white;
+  overflow: hidden;
 }
 
-.hero h1 {
-  margin: 0 0 10px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 38px;
-}
-
-.hero p {
-  margin: 0;
-  color: #ddd;
-  font-size: 17px;
-  line-height: 1.6;
+.greys-header img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 
@@ -327,14 +319,6 @@ footer p {
 
 @media (max-width: 600px) {
 
-  .hero h1 {
-    font-size: 31px;
-  }
-
-  .hero p {
-    font-size: 15px;
-  }
-
   .gallery {
     grid-template-columns: 1fr;
   }
@@ -364,18 +348,17 @@ footer p {
 
 
 <!-- ========================= -->
-<!-- HERO -->
+<!-- GREY'S CAKE HEADER -->
 <!-- ========================= -->
 
-<header class="hero">
+<div class="greys-header">
 
-  <h1>Grey's Cake</h1>
+  <img
+    src="5DE996BD-9F2A-4909-B53A-31FDE7A428FF.jpeg"
+    alt="Grey's Bakery"
+  >
 
-  <p>
-    Custom Cakes &amp; Dessert Tables
-  </p>
-
-</header>
+</div>
 
 
 <!-- ========================= -->
@@ -431,7 +414,6 @@ footer p {
     Custom cakes created by Grey's Cake for your special moments.
     Ask us about custom designs, flavors and orders.
   </p>
-
 
   <div class="coming-soon">
 
