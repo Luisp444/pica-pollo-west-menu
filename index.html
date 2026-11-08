@@ -34,7 +34,7 @@ body {
 
 }
 
-/* LOGO */
+/* VIDEO HEADER */
 
 .logo-banner {
 
@@ -48,13 +48,17 @@ body {
 
 }
 
-.logo-banner img {
+.logo-banner video {
 
-  width: 100%;
+  display: block;
+
+  width: auto;
 
   height: auto;
 
-  display: block;
+  max-width: 100%;
+
+  margin: 0 auto;
 
 }
 
@@ -247,8 +251,6 @@ section h2 {
   padding: 18px;
 
   margin-bottom: 12px;
-
-  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
 
 }
 
@@ -850,17 +852,35 @@ footer p {
 
 <body>
 
-<!-- LOGO -->
+<!-- VIDEO HEADER -->
 
 <div class="logo-banner">
 
-  <img
+  <video
 
-    src="582646D8-D62A-4BE4-A929-F0DA4592F465.png"
+    autoplay
 
-    alt="Pica Pollo West"
+    muted
+
+    loop
+
+    playsinline
+
+    preload="metadata"
 
   >
+
+    <source
+
+      src="bd9152c0e1c3428990ad3b8e91b3d958.mov"
+
+      type="video/quicktime"
+
+    >
+
+    Your browser does not support the video tag.
+
+  </video>
 
 </div>
 
